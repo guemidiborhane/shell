@@ -1,6 +1,7 @@
+#!/usr/bin/env zsh
+
 function prompt_char {
     git branch >/dev/null 2>/dev/null && echo '±' && return
-    hg root >/dev/null 2>/dev/null && echo 'Hg' && return
     echo '○'
 }
 
